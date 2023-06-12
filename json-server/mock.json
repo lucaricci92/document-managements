@@ -1,0 +1,813 @@
+{
+  "skiCoverage": {
+    "coverage": true
+  },
+  "preventives": {
+    "data": {
+      "list": [
+        {
+          "name": "LIGHT",
+          "yearly": 341,
+          "monthly": 28,
+          "bestSeller": false,
+          "garancies": [
+            {
+              "title": "RC vita privata",
+              "value": 3000000,
+              "description": "Proteggi te e i membri della tua famiglia dai danni corporali e materiali causati a terzi, dovuti a un fatto accidentale.",
+              "limitless": "Mass. € 3.000.000"
+            },
+            {
+              "title": "RC Fabbricato",
+              "value": 3000000,
+              "description": "Copri gli eventuali danni corporali e materiali che la tua abitazione ad uso residenziale può provocare a terzi.",
+              "limitless": "Mass. € 3.000.000"
+            },
+            {
+              "title": "Danni al fabbricato",
+              "value": 3000000,
+              "description": "Proteggi la tua casa e i beni che contiene da incendi, esplosioni o eventi naturali, e tutela fissi e infissi in caso di furto o rapina.",
+              "limitless": "Min. 000.000 - Mass. € 3.000.000"
+            },
+            {
+              "title": "Danni al contenuto",
+              "value": 3000000,
+              "description": "Proteggi mobili, arredamento, tende e tendoni e ciò che contiene la tua casa in caso di eventi atmosferici o bagnamento.",
+              "limitless": "Default € 60.000"
+            }
+          ]
+        },
+        {
+          "name": "SPECIAL",
+          "yearly": 377,
+          "monthly": 31,
+          "bestSeller": true,
+          "garancies": [
+            {
+              "title": "RC vita privata",
+              "value": 3000000,
+              "description": "Proteggi te e i membri della tua famiglia dai danni corporali e materiali causati a terzi, dovuti a un fatto accidentale.",
+              "limitless": "Mass. € 3.000.000"
+            },
+            {
+              "title": "RC Fabbricato",
+              "value": 3000000,
+              "description": "Copri gli eventuali danni corporali e materiali che la tua abitazione ad uso residenziale può provocare a terzi.",
+              "limitless": "Mass. € 3.000.000"
+            },
+            {
+              "title": "Danni al fabbricato",
+              "value": 3000000,
+              "description": "Proteggi la tua casa e i beni che contiene da incendi, esplosioni o eventi naturali, e tutela fissi e infissi in caso di furto o rapina.",
+              "limitless": "Min. 000.000 - Mass. € 3.000.000"
+            },
+            {
+              "title": "Danni al contenuto",
+              "value": 3000000,
+              "description": "Proteggi mobili, arredamento, tende e tendoni e ciò che contiene la tua casa in caso di eventi atmosferici o bagnamento.",
+              "limitless": "Default € 60.000"
+            },
+            {
+              "title": "Furto, rapina e scippo",
+              "value": 3000000,
+              "description": "Proteggi te e la tua famiglia da eventuali eventi spiacevoli (tentati o consumati) avvenuti in casa o fuori.",
+              "limitless": "Default € 3.000"
+            }
+          ]
+        },
+        {
+          "name": "EXTRA",
+          "yearly": 394,
+          "monthly": 33,
+          "bestSeller": false,
+          "garancies": [
+            {
+              "title": "RC vita privata",
+              "value": 3000000,
+              "description": "Proteggi te e i membri della tua famiglia dai danni corporali e materiali causati a terzi, dovuti a un fatto accidentale.",
+              "limitless": "Mass. € 3.000.000"
+            },
+            {
+              "title": "RC Fabbricato",
+              "value": 3000000,
+              "description": "Copri gli eventuali danni corporali e materiali che la tua abitazione ad uso residenziale può provocare a terzi.",
+              "limitless": "Mass. € 3.000.000"
+            },
+            {
+              "title": "Danni al fabbricato",
+              "value": 3000000,
+              "description": "Proteggi la tua casa e i beni che contiene da incendi, esplosioni o eventi naturali, e tutela fissi e infissi in caso di furto o rapina.",
+              "limitless": "Min. 000.000 - Mass. € 3.000.000"
+            },
+            {
+              "title": "Danni al contenuto",
+              "value": 3000000,
+              "description": "Proteggi mobili, arredamento, tende e tendoni e ciò che contiene la tua casa in caso di eventi atmosferici o bagnamento.",
+              "limitless": "Default € 60.000"
+            },
+            {
+              "title": "Furto, rapina e scippo",
+              "value": 3000000,
+              "description": "Proteggi te e la tua famiglia da eventuali eventi spiacevoli (tentati o consumati) avvenuti in casa o fuori.",
+              "limitless": "Default € 3.000"
+            },
+            {
+              "title": "Ricorso Terzi",
+              "value": 3000000,
+              "description": "Ti risarciamo le somme che devi corrispondere in quanto civilmente responsabile per danni materiali causati da un sinistro.",
+              "limitless": "Default € 60.000"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "quotationDetail": {
+    "data": {
+      "id": "ABC123456789",
+      "isProposed": true,
+      "expirationDate": "2022/09/19",
+      "product": "Casa e danni a terzi",
+      "productIcon": "../../../../../assets/assimoco/icons/casa-danni.svg",
+      "productVariant": "EXTRA",
+      "address": "Via Verdi 27, Milano, 20158, Italia",
+      "annualPrice": "341",
+      "monthlyPrice": "33",
+      "paymentSplit": "Annuale",
+      "bankBonded": true,
+      "startDate": "2022/10/20",
+      "creationDate": "2022/08/30",
+      "contractor": {
+        "firstName": "Marianna",
+        "lastName": "Rossi",
+        "birthDate": "2000/01/01",
+        "birthCity": "Roma",
+        "email": "marianna.rossi@gmail.com",
+        "phone": "3331234567",
+        "familyMembers": 3
+      },
+      "ensuredObject": {
+        "address": "Via Verdi 27, 20159, Milano",
+        "otherCoverages": false,
+        "usage": "Residenza abituale",
+        "contractType": "Proprietà",
+        "squareMeters": 75,
+        "otherPolicies": false,
+        "accidentsInPast3Years": false,
+        "bankFinancing": true
+      },
+      "documents": [
+        {
+          "name": "Nome documento",
+          "downloadLink": "link"
+        },
+        {
+          "name": "Nome documento",
+          "downloadLink": "link"
+        },
+        {
+          "name": "Nome documento",
+          "downloadLink": "link"
+        },
+        {
+          "name": "Nome documento",
+          "downloadLink": "link"
+        },
+        {
+          "name": "Nome documento",
+          "downloadLink": "link"
+        },
+        {
+          "name": "Nome documento",
+          "downloadLink": "link"
+        },
+        {
+          "name": "Nome documento",
+          "downloadLink": "link"
+        },
+        {
+          "name": "Nome documento",
+          "downloadLink": "link"
+        },
+        {
+          "name": "Nome documento",
+          "downloadLink": "link"
+        }
+      ],
+      "warranties": [
+        {
+          "name": "RC Vita Privata",
+          "value": 0
+        },
+        {
+          "name": "Danni al fabbricato",
+          "value": 0
+        },
+        {
+          "name": "RC Fabbricato",
+          "value": 0
+        },
+        {
+          "name": "Ricorso Terzi",
+          "value": 0
+        },
+        {
+          "name": "Furto, rapina e scippo",
+          "value": 0
+        }
+      ],
+      "extraWarranties": [
+        {
+          "name": "RC verso prestatori di lavoro",
+          "value": 2.9
+        },
+        {
+          "name": "RC verso prestatori di lavoro",
+          "value": 4.4
+        },
+        {
+          "name": "RC verso prestatori di lavoro",
+          "value": 1
+        }
+      ]
+    }
+  },
+  "quotations": {
+    "data": {
+      "list": [
+        {
+          "id": "ABC123456789",
+          "isProposed": true,
+          "expirationDate": "2022/09/19",
+          "product": "Casa e danni a terzi",
+          "productIcon": "../../../../../assets/assimoco/icons/casa-danni.svg",
+          "productVariant": "EXTRA",
+          "address": "Via Verdi 27, Milano, 20158, Italia",
+          "annualPrice": "341",
+          "monthlyPrice": "33",
+          "paymentSplit": "Annuale",
+          "bankBonded": true,
+          "startDate": "2022/10/20",
+          "creationDate": "2022/08/30",
+          "contractor": {
+            "firstName": "Marianna",
+            "lastName": "Rossi",
+            "birthDate": "2000/01/01",
+            "birthCity": "Roma",
+            "email": "marianna.rossi@gmail.com",
+            "phone": "3331234567",
+            "familyMembers": 3
+          },
+          "ensuredObject": {
+            "address": "Via Verdi 27, 20159, Milano",
+            "otherCoverages": false,
+            "usage": "Residenza abituale",
+            "contractType": "Proprietà",
+            "squareMeters": 75,
+            "otherPolicies": false,
+            "accidentsInPast3Years": false,
+            "bankFinancing": true
+          },
+          "documents": [
+            {
+              "name": "Nome documento",
+              "downloadLink": "link"
+            },
+            {
+              "name": "Nome documento",
+              "downloadLink": "link"
+            },
+            {
+              "name": "Nome documento",
+              "downloadLink": "link"
+            }
+          ],
+          "warranties": [
+            {
+              "name": "RC Vita Privata",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "id": "ADE123456789",
+          "isProposed": false,
+          "expirationDate": "2022/10/12",
+          "product": "Casa e danni a terzi",
+          "productIcon": "../../../../../assets/assimoco/icons/casa-danni.svg",
+          "productVariant": "EXTRA",
+          "address": "Via Verdi 27, Milano, 20158, Italia",
+          "annualPrice": "450",
+          "monthlyPrice": "42",
+          "paymentSplit": "Annuale",
+          "bankBonded": true,
+          "startDate": "2022/10/20",
+          "creationDate": "2022/08/30",
+          "contractor": {
+            "firstName": "Marianna",
+            "lastName": "Rossi",
+            "birthDate": "2000/01/01",
+            "birthCity": "Roma",
+            "email": "marianna.rossi@gmail.com",
+            "phone": "3331234567",
+            "familyMembers": 3
+          },
+          "ensuredObject": {
+            "address": "Via Verdi 27, 20159, Milano",
+            "otherCoverages": false,
+            "usage": "Residenza abituale",
+            "contractType": "Proprietà",
+            "squareMeters": 75,
+            "otherPolicies": false,
+            "accidentsInPast3Years": false,
+            "bankFinancing": true
+          },
+          "documents": [
+            {
+              "name": "Nome documento",
+              "downloadLink": "link"
+            },
+            {
+              "name": "Nome documento",
+              "downloadLink": "link"
+            },
+            {
+              "name": "Nome documento",
+              "downloadLink": "link"
+            }
+          ],
+          "warranties": [
+            {
+              "name": "RC Vita Privata",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "id": "TVA123456789",
+          "isProposed": false,
+          "expirationDate": "2022/11/02",
+          "product": "Salute",
+          "productIcon": "../../../../../assets/assimoco/icons/salute.svg",
+          "productVariant": "NOME",
+          "address": "Via Verdi 27, Milano, 20158, Italia",
+          "annualPrice": "572",
+          "monthlyPrice": "60",
+          "paymentSplit": "Annuale",
+          "bankBonded": true,
+          "startDate": "2022/10/20",
+          "creationDate": "2022/08/30",
+          "contractor": {
+            "firstName": "Marianna",
+            "lastName": "Rossi",
+            "birthDate": "2000/01/01",
+            "birthCity": "Roma",
+            "email": "marianna.rossi@gmail.com",
+            "phone": "3331234567",
+            "familyMembers": 3
+          },
+          "ensuredObject": {
+            "address": "Via Verdi 27, 20159, Milano",
+            "otherCoverages": false,
+            "usage": "Residenza abituale",
+            "contractType": "Proprietà",
+            "squareMeters": 75,
+            "otherPolicies": false,
+            "accidentsInPast3Years": false,
+            "bankFinancing": true
+          },
+          "documents": [
+            {
+              "name": "Nome documento",
+              "downloadLink": "link"
+            },
+            {
+              "name": "Nome documento",
+              "downloadLink": "link"
+            },
+            {
+              "name": "Nome documento",
+              "downloadLink": "link"
+            }
+          ],
+          "warranties": [
+            {
+              "name": "RC Vita Privata",
+              "value": 0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "policyDetail": {
+    "data": {
+      "id": "ABC123456789",
+      "beginningDate": "2021/12/20",
+      "expirationDate": "2022/09/19",
+      "product": "Casa e danni a terzi",
+      "productIcon": "../../../../../assets/assimoco/icons/casa-danni.svg",
+      "productVariant": "EXTRA",
+      "address": "Via Verdi 27, Milano, 20158, Italia",
+      "annualPrice": "341",
+      "monthlyPrice": "33",
+      "status": "ACTIVE",
+      "documents": [
+        {
+          "name": "Nome documento",
+          "downloadLink": "link"
+        },
+        {
+          "name": "Nome documento",
+          "downloadLink": "link"
+        },
+        {
+          "name": "Nome documento",
+          "downloadLink": "link"
+        },
+        {
+          "name": "Nome documento",
+          "downloadLink": "link"
+        },
+        {
+          "name": "Nome documento",
+          "downloadLink": "link"
+        },
+        {
+          "name": "Nome documento",
+          "downloadLink": "link"
+        },
+        {
+          "name": "Nome documento",
+          "downloadLink": "link"
+        },
+        {
+          "name": "Nome documento",
+          "downloadLink": "link"
+        },
+        {
+          "name": "Nome documento",
+          "downloadLink": "link"
+        }
+      ]
+    }
+  },
+  "policies": {
+    "data": {
+      "list": [
+        {
+          "id": "ABC123456789",
+          "beginningDate": "2021/12/20",
+          "expirationDate": "2022/09/19",
+          "product": "Casa e danni a terzi",
+          "productIcon": "../../../../../assets/assimoco/icons/casa-danni.svg",
+          "productVariant": "EXTRA",
+          "address": "Via Verdi 27, Milano, 20158, Italia",
+          "annualPrice": "341",
+          "monthlyPrice": "33",
+          "status": "ACTIVE",
+          "documents": [
+            {
+              "name": "Nome documento",
+              "downloadLink": "link"
+            },
+            {
+              "name": "Nome documento",
+              "downloadLink": "link"
+            },
+            {
+              "name": "Nome documento",
+              "downloadLink": "link"
+            }
+          ]
+        },
+        {
+          "id": "ADE123456789",
+          "beginningDate": "2022/12/20",
+          "expirationDate": "2023/10/12",
+          "product": "Salute",
+          "productIcon": "../../../../../assets/assimoco/icons/salute.svg",
+          "productVariant": "NOME",
+          "address": "Via Verdi 27, Milano, 20158, Italia",
+          "annualPrice": "450",
+          "monthlyPrice": "42",
+          "status": "CANCELLATION_REQUEST",
+          "cancellationRequestDate": "2022/08/29",
+          "documents": [
+            {
+              "name": "Nome documento",
+              "downloadLink": "link"
+            },
+            {
+              "name": "Nome documento",
+              "downloadLink": "link"
+            },
+            {
+              "name": "Nome documento",
+              "downloadLink": "link"
+            }
+          ]
+        },
+        {
+          "id": "TVA123456789",
+          "beginningDate": "2022/09/14",
+          "expirationDate": "2023/09/14",
+          "product": "Casa e danni a terzi",
+          "productIcon": "../../../../../assets/assimoco/icons/casa-danni.svg",
+          "productVariant": "EXTRA",
+          "address": "Via Verdi 27, Milano, 20158, Italia",
+          "annualPrice": "572",
+          "monthlyPrice": "60",
+          "status": "IN_ACTIVATION",
+          "documents": [
+            {
+              "name": "Nome documento",
+              "downloadLink": "link"
+            },
+            {
+              "name": "Nome documento",
+              "downloadLink": "link"
+            },
+            {
+              "name": "Nome documento",
+              "downloadLink": "link"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "payment-methods": {
+    "data": {
+      "list": [
+        {
+          "firstName": "Gianmarco",
+          "lastName": "De Santis",
+          "cardNumber": "*************111",
+          "cardExpiration": "05/2025",
+          "cardIcon": "",
+          "cardProviderLogo": "../../../../../assets/assimoco/icons/mc-icon.svg",
+          "cardtype": "mc",
+          "isDefault": true
+        },
+        {
+          "firstName": "Gianmarco",
+          "lastName": "De Santis",
+          "cardNumber": "*************111",
+          "cardExpiration": "02/2024",
+          "cardIcon": "",
+          "cardProviderLogo": "../../../../../assets/assimoco/icons/visa-icon.svg",
+          "cardtype": "visa",
+          "isDefault": false
+        },
+        {
+          "firstName": "Gianmarco",
+          "lastName": "De Santis",
+          "cardNumber": "*************111",
+          "cardExpiration": "12/2021",
+          "cardIcon": "",
+          "cardProviderLogo": "../../../../../assets/assimoco/icons/visa-icon.svg",
+          "cardtype": "visa",
+          "isDefault": false
+        }
+      ]
+    }
+  },
+  "appointments": {
+    "data": {
+      "list": [
+        {
+          "status": "CONFIRMED",
+          "agent": "Paolo Rossi",
+          "date": "2022/06/03",
+          "time": "14.30",
+          "product": "Casa e danni a terzi",
+          "method": "ONLINE",
+          "meetingUrl": "www.google.com"
+        },
+        {
+          "status": "PENDING",
+          "agent": "Paolo Rossi",
+          "date": "2022/06/03",
+          "time": "14.30",
+          "product": "Casa e danni a terzi",
+          "method": "LIVE",
+          "address": "Via Verdi 27, Milano, 20158"
+        },
+        {
+          "status": "REFUSED",
+          "agent": "Paolo Rossi",
+          "date": "2022/06/03",
+          "time": "14.30",
+          "product": "Casa e danni a terzi",
+          "method": "ONLINE",
+          "meetingUrl": "www.google.com"
+        }
+      ]
+    }
+  },
+  "technical-requests": {
+    "data": {
+      "list": [
+        {
+          "status": "SOLVED",
+          "date": "2022/06/03",
+          "time": "14.30",
+          "type": "Pagamento",
+          "issue": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel dolor et dui efficitur condimentum"
+        },
+        {
+          "status": "TAKEN",
+          "date": "2022/06/03",
+          "time": "14.30",
+          "type": "Pagamento",
+          "issue": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel dolor et dui efficitur condimentum"
+        }
+      ]
+    }
+  },
+  "maximals": {
+    "data": {
+      "list": [
+        {
+          "codename": "maximal_rc_workers",
+          "options": [
+            1000000,
+            200000,
+            3000000
+          ]
+        },
+        {
+          "codename": "maximal_rc_building",
+          "options": [
+            1000000,
+            200000,
+            3000000
+          ]
+        },
+        {
+          "codename": "maximal_rc_building_damage",
+          "options": [
+            1000000,
+            200000,
+            3000000
+          ]
+        }
+      ]
+    }
+  },
+  "exemptions": {
+    "data": {
+      "list": [
+        {
+          "codename": "exemption_fire",
+          "options": [
+            "relative",
+            "absolute"
+          ]
+        }
+      ]
+    }
+  },
+  "warrancies": {
+    "data": {
+      "list": [
+        {
+          "id": 1,
+          "codename": "warrancy_transport",
+          "price": 1,
+          "type": "free"
+        },
+        {
+          "id": 2,
+          "codename": "warrancy_freezing",
+          "price": 2.5,
+          "type": "free"
+        },
+        {
+          "id": 3,
+          "codename": "warrancy_slabs",
+          "price": 3,
+          "type": "free"
+        },
+        {
+          "id": 4,
+          "codename": "warrancy_values",
+          "price": 1.5,
+          "type": "free"
+        },
+        {
+          "id": 5,
+          "codename": "warrancy_sum_increase",
+          "price": 2,
+          "type": "free"
+        }
+      ]
+    }
+  },
+  "clauses": {
+    "data": {
+      "list": [
+        {
+          "id": 1,
+          "codename": "clause_merch_damage",
+          "price": 0
+        }
+      ]
+    }
+  },
+  "survey": {
+    "address": {
+      "address": "Via Rossi",
+      "cap": 20190,
+      "residence": "Milano",
+      "civicNumber": 50,
+      "province": "Milano"
+    },
+    "ownership": {
+      "isOwnership": true,
+      "isCovarage": false
+    },
+    "isResidence": true,
+    "homeSize": {
+      "meters": "111"
+    },
+    "haveInsurance": false
+  },
+  "products": {
+    "data": {
+      "list": [
+        {
+          "id": 1,
+          "productId": 1,
+          "brokerId": 1,
+          "status": "A",
+          "repeat": true,
+          "validateFrom": "2022-10-24",
+          "validateTo": null,
+          "groups": [
+            "SALUTE"
+          ],
+          "codeDescription": null
+        },
+        {
+          "id": 2,
+          "productId": 2,
+          "brokerId": 1,
+          "status": "A",
+          "repeat": true,
+          "validateFrom": "2022-10-17",
+          "validateTo": null,
+          "groups": [
+            "SALUTE"
+          ],
+          "codeDescription": null
+        },
+        {
+          "id": 3,
+          "productId": 3,
+          "brokerId": 1,
+          "status": "A",
+          "repeat": true,
+          "validateFrom": "2022-10-17",
+          "validateTo": null,
+          "groups": [
+            "IMPRESA"
+          ],
+          "codeDescription": null
+        },
+        {
+          "id": 4,
+          "productId": 4,
+          "brokerId": 1,
+          "status": "A",
+          "repeat": true,
+          "validateFrom": "2022-8-1",
+          "validateTo": "2002-12-1",
+          "groups": [
+            "SPORT"
+          ],
+          "codeDescription": null
+        }
+      ]
+    }
+  },
+  "ongoing-quotation": {
+    "data": {
+      "contractor": {
+        "firstName": "Marianna",
+        "lastName": "Rossi",
+        "birthDate": "2000/01/01",
+        "birthCity": "Roma",
+        "fiscalCode": "MRNRSS80T48L319S",
+        "email": "marianna.rossi@gmail.com",
+        "phone": "3331234567",
+        "address": "Via Verdi 27, 20159, Milano",
+        "street": "Via Rossi, 50",
+        "zipcode": "00123",
+        "city": "Roma",
+        "state": "Roma"
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "/quotations/:id": "/quotationDetail",
+  "/policies/:id": "/policyDetail"
+}
