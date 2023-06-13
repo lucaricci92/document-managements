@@ -6,6 +6,8 @@
   border-collapse: collapse;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
   background-color: var(--tableBgColor, #fff);
+  margin-bottom: 0% !important;
+  border: 1px solid;
 }
 
 .table__thead {
@@ -34,13 +36,14 @@
 
   .table__td:first-child,
   .table__th:first-child {
-    width: 30%;
+    width: 40%;
     text-align: left;
   }
 
   .table__td,
   .table__th {
-    text-align: center;
+    text-align: end;
+    font-size: small;
   }
 }
 
@@ -88,7 +91,7 @@
 /* demo styles for table */
 
 .table {
-  --tableCellPadding: 2rem;
+  --tableCellPadding: 20px;
   --tableTitleBgColor: #1c293f;
   --tableTitleTextColor: #fff;
   --tableRowBgColorHover: #f0f0f0;
@@ -145,15 +148,15 @@ a:focus {
 .main-container {
   padding-left: 1rem;
   padding-right: 1rem;
-  max-width: 1000px;
+  // max-width: 1000px;
 
   margin-right: auto;
   margin-left: auto;
 }
 
 .page__container {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .footer {
@@ -178,4 +181,14 @@ a:focus {
   .melnik909 {
     display: none;
   }
+}
+.custom-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23333' viewBox='0 0 16 16'%3E%3Cpath d='M8 10.586L3.707 6.293a1 1 0 00-1.414 1.414l5 5a1 1 0 001.414 0l5-5a1 1 0 00-1.414-1.414L8 10.586z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.7rem center;
+  background-size: 12px 12px;
+  padding-right: 2.5rem;
 }

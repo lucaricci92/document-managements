@@ -46,4 +46,22 @@ export class DocumentsComponent implements OnInit {
     const filterValue = this.filterControl.value.toLowerCase();
     this.filteredFiles = this.files.filter(file => file.name.toLowerCase().includes(filterValue));
   }
+  deleteFile(fileId: number | null) {
+    this.service.deleteFile(fileId).subscribe({
+      next: (response) => {
+        console.log(response);
+        this.ngOnInit();
+      },
+      error: (error) => {
+        console.log(error);
+      }
+    });
+  }
+  downloadFile(base64String: string, fileName: string) {
+    const source = base64String;
+    const link = document.createElement("a");
+    link.href = source;
+    link.download = `${fileName}`;
+    link.click();
+  }
 }

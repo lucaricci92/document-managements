@@ -1,63 +1,124 @@
-<div class="page">
-  <div class="page__demo">
-    <div class="main-container page__container">
-      <table class="table">
-        <thead class="table__thead">
-          <tr class="table__head">
-            <th class="table__th">titolo documento</th>
-            <th class="table__th"></th>
-            <th class="table__th"></th>
+<header>
+  <h4 class="text-center p-4 d-flex justify-content-lg-start"><b>CREA TIPO DOCUMENTO</b></h4>
+</header>
+<form [formGroup]="form" (ngSubmit)="Submit()">
+  <div class="page">
+    <div class="page__demo">
+      <div class="main-container page__container">
+        <table class="table">
+          <thead class="table__thead">
+            <tr class="table__head">
+              <th class="table__th"><b>TITOLO TIPO DOCUMENTO</b></th>
+              <th class="table__th"></th>
+              <th class="table__th"></th>
+            </tr>
+          </thead>
+          <tbody class="table__tbody">
+            <tr class="table__tr">
+              <td class="table__td table__mobile-title">
+                <span><b>TITOLO</b></span>
+              </td>
+              <td class="table__td"></td>
+              <td class="table__td">
+                <span class="table__value"><b>AZIONI</b></span>
+              </td>
+            </tr>
+          </tbody>
+          <tbody class="table__tbody">
+            <tr class="table__tr">
+              <td class="table__td table__mobile-title">
+                <input formControlName="name" id="name" type="text" class="form-control"
+                  placeholder="Inserisci il nome del documento">
+              </td>
+              <td class="table__td"></td>
+              <td class="table__td">
+                <!-- icon -->
+                <i class="bi bi-check-square m-1" style="color: orange; font-size: 2rem;"></i>
+                <i class="bi bi-x-square m-1" style="color: orange; font-size: 2rem;"></i>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table">
+          <thead class="table__thead">
+            <tr class="table__head">
+              <th class="table__th"><b>GESTIONE CAMPI</b></th>
+              <th class="table__th"></th>
+              <th class="table__th"></th>
+              <th class="table__th"></th>
+            </tr>
+          </thead>
+          <tbody class="table__tbody">
+            <tr class="table__tr">
+              <td class="table__td table__mobile-title">
+                <span><b>NOME</b></span>
+              </td>
+              <td class="table__td">
+                <span class="table__value"><b>TIPOLOGIA</b></span>
+              </td>
+              <td class="table__td">
+                <span class="table__value"><b>OBBLIGATORIO (*)</b></span>
+              </td>
+              <td class="table__td">
+                <span class="table__value"><b>AZIONI</b></span>
+              </td>
+            </tr>
+          </tbody>
+          <tbody class="table__tbody">
+            <tr class="table__tr">
+              <td class="table__td table__mobile-title">
+                <input formControlName="titleFile" id="titleFile" type="text" class="form-control"
+                  placeholder="Inserisci il nome del documento">
+                <!-- <button style="background-color: #F17506; border: 1px solid #F17506; " type="button" class="btn btn-sm mt-4 "><i style="color: white;" class="bi bi-plus-lg p-1"></i><b style="color: white;">AGGIUNGI</b></button> -->
+                <div class="input-group">
+                  <label for="upload-attachment" class="btn btn-sm mt-4"
+                    style="background-color: #F17506; border: 1px solid #F17506; color: white;">
+                    <i class="bi bi-plus-lg p-1"></i>
+                    <b>AGGIUNGI</b>
+                  </label>
+                  <input type="file" accept=".png, .jpg, .pdf" name="data" id="upload-attachment" max-size="1000"
+                    placeholder="{{ datafile.Base64.title }}" formControlName="data" (change)="onFileChange($event)"
+                    style="display: none;">
+                </div>
+              </td>
+              <td class="table__td">
+                <select formControlName="tipologia" id="tipologia" class="form-control custom-select"
+                  id="exampleFormControlSelect1">
+                  <option>Seleziona</option>
+                  <option>Testo</option>
+                  <option>Numero</option>
+                  <option>Data</option>
+                  <option>Lista</option>
+                </select>
+                <i class="fa-sharp fa-solid fa-square-arrow-down"></i>
+              </td>
+              <td class="table__td">
+                <div class="form-check d-flex justify-content-center">
+                  <input formControlName="obbligatorio" id="obbligatorio" type="checkbox">
+                </div>
+              </td>
+              <td class="table__td">
+                <!-- icon -->
+                <i class="bi bi-check-square m-1" style="color: orange;; font-size: 2rem;"></i>
+                <i class="bi bi-x-square m-1" style="color: orange;; font-size: 2rem;"></i>
+                <img src="assets/icons/cestino.png" alt="cestino" class="m-1 pb-lg-3 pb-md-3 pb-xs-3">
+              </td>
+            </tr>
+          </tbody>
+        </table>
 
-          </tr>
-        </thead>
-        <tbody class="table__tbody">
-          <tr class="table__tr">
-            <td class="table__td table__mobile-title">
-              <span>Titolo</span>
-            </td>
-            <td class="table__td">
-              <!-- <span class="table__mobile-caption">Silver Package</span>
-              <span class="table__value">6 hours</span> -->
-            </td>
-            <td class="table__td">
-              <span class="table__value">Azioni</span>
-
-            </td>
-          </tr>
-        </tbody>
-        <tbody class="table__tbody">
-          <tr class="table__tr">
-            <td class="table__td table__mobile-title">
-              <!-- <span>Wedding day coverage</span> -->
-              <input type="text" class="form-control" placeholder="inserisci il nome del documento">
-            </td>
-            <td class="table__td">
-              <!-- <span class="table__mobile-caption">Silver Package</span>
-              <span class="table__value">6 hours</span> -->
-            </td>
-            <td class="table__td">
-              <!-- icon -->
-              <i class="bi bi-check-square m-1" style="color: orange; font-size: 2rem;"></i>
-              <i class="bi bi-x-square m-1" style="color: orange; font-size: 2rem;"></i>
-              <!-- <i class="bi bi-trash" style="color: orange; font-size: 1rem; border: 2px solid orange;"></i> -->
-              <!-- png icon -->
-              <img src="assets/icons/cestino.png" alt="cestino" class="m-1 pb-lg-3 pb-md-3 pb-xs-3">
-
-            </td>
-          </tr>
-        </tbody>
-      </table>
+        <div class="p-2">
+          <button style="background-color: #F17506; border: 1px solid #F17506;" type="submit" class="btn btn-sm m-2">
+            <i style="color: white;" class="fas fa-floppy-disk px-1"></i>
+            <b style="color: white;">SALVA</b>
+          </button>
+          <button style="background-color: #ffffff; border: 1px solid #F17506;" type="button" class="btn btn-sm m-2">
+            <i style="color: #F17506;" class="bi bi-x p-1 fa-1x"></i>
+            <b class="mb-3" style="color: #F17506;">ANNULLA</b>
+          </button>
+        </div>
+      </div>
     </div>
+    <footer class="footer"></footer>
   </div>
-  <footer class="footer">
-    <div class="main-container footer__container">
-      <span>Liked? Please,
-        <a href="https://stas-melnikov.ru/donate/" rel="noopener noreferrer" target="_blank">look the page</a>
-      </span>
-      <a href="https://stas-melnikov.ru" class="melnik909" rel="noopener noreferrer" target="_blank">Developed by Stas
-        Melnikov</a>
-    </div>
-  </footer>
-</div>
-<i class="bi bi-x-square bi-lg" style="color: orange;"></i>
-<i class="bi bi-pencil-square bi-2x" style="color: orange;"></i>
+</form>

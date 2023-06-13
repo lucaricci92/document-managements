@@ -16,15 +16,23 @@
     <tr>
       <th style="background-color: #007bff; color: white;">ID</th>
       <th style="background-color: #007bff; color: white;">Nome file</th>
+      <th style="background-color: #007bff; color: white;">Tipologia</th>
+      <th style="background-color: #007bff; color: white;">Obbligatorio</th>
       <th style="background-color: #007bff; color: white;">Azioni</th>
+      <!-- <th style="background-color: #007bff; color: white;">File</th> -->
     </tr>
   </thead>
   <tbody>
     <tr *ngFor="let file of filteredFiles">
       <td style="background-color: #eaf1fb;">{{ file.id }}</td>
       <td style="background-color: #eaf1fb;">{{ file.name }}</td>
+      <td style="background-color: #eaf1fb;">{{file.tipologia}}</td>
+      <td style="background-color: #eaf1fb;">{{file.obbligatorio}}</td>
+      <!-- <td style="background-color: #eaf1fb;">{{file.fileBase64}}</td> -->
       <td style="background-color: #eaf1fb;">
         <button class="btn btn-secondary" (click)="editFile(file.id)">Modifica</button>
+        <button class="btn btn-danger" (click)="deleteFile(file.id)">Elimina</button>
+        <button class="btn btn-primary" (click)="downloadFile(file.Base64.data, file.Base64.title)">Scarica</button>
       </td>
     </tr>
   </tbody>

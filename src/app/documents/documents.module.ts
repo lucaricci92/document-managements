@@ -4,7 +4,7 @@ import { DocumentsComponent } from './documents.component';
 import { DocumentsRoutingModule } from './documents-routing.module';
 import { ServiceService } from './service.service';
 import { CreateEditComponent } from './create-edit/create-edit.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -17,7 +17,8 @@ import { ReactiveFormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     DocumentsRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ]
 })
 export class DocumentsModule { }
