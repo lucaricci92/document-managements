@@ -1,1 +1,31 @@
-<p>documents works!</p>
+<h2 class="text-center">Lista Documenti</h2>
+
+<div class="row mb-3 d-flex justify-content-end">
+  <div class="col-auto">
+    <button class="btn btn-primary" (click)="editFile(null)">Crea nuovo file</button>
+  </div>
+  <div class="col-auto">
+    <form (submit)="filterTable()">
+      <input type="text" class="form-control" placeholder="Filtra per nome" [formControl]="filterControl">
+    </form>
+  </div>
+</div>
+
+<table class="table table-bordered table-striped">
+  <thead class="thead-dark">
+    <tr>
+      <th style="background-color: #007bff; color: white;">ID</th>
+      <th style="background-color: #007bff; color: white;">Nome file</th>
+      <th style="background-color: #007bff; color: white;">Azioni</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let file of filteredFiles">
+      <td style="background-color: #eaf1fb;">{{ file.id }}</td>
+      <td style="background-color: #eaf1fb;">{{ file.name }}</td>
+      <td style="background-color: #eaf1fb;">
+        <button class="btn btn-secondary" (click)="editFile(file.id)">Modifica</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
