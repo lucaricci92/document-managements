@@ -77,18 +77,16 @@
                     <b>AGGIUNGI</b>
                   </label>
                   <input type="file" accept=".png, .jpg, .pdf" name="data" id="upload-attachment" max-size="1000"
-                    placeholder="{{ datafile.Base64.title }}" formControlName="data" (change)="onFileChange($event)"
-                    style="display: none;">
+                    placeholder="{{ datafile?.Base64?.title }}" (change)="onFileChange($event)" style="display: none;">
                 </div>
               </td>
               <td class="table__td">
                 <select formControlName="tipologia" id="tipologia" class="form-control custom-select"
                   id="exampleFormControlSelect1">
-                  <option>Seleziona</option>
-                  <option>Testo</option>
-                  <option>Numero</option>
-                  <option>Data</option>
-                  <option>Lista</option>
+                  <option>PDF</option>
+                  <option>EXCELL</option>
+                  <option>PNG</option>
+                  <option>JPG</option>
                 </select>
                 <i class="fa-sharp fa-solid fa-square-arrow-down"></i>
               </td>
@@ -112,7 +110,8 @@
             <i style="color: white;" class="fas fa-floppy-disk px-1"></i>
             <b style="color: white;">SALVA</b>
           </button>
-          <button style="background-color: #ffffff; border: 1px solid #F17506;" type="button" class="btn btn-sm m-2">
+          <button (click)="annulla()" style="background-color: #ffffff; border: 1px solid #F17506;" type="button"
+            class="btn btn-sm m-2">
             <i style="color: #F17506;" class="bi bi-x p-1 fa-1x"></i>
             <b class="mb-3" style="color: #F17506;">ANNULLA</b>
           </button>

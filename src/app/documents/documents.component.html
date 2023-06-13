@@ -1,39 +1,83 @@
-<h2 class="text-center">Lista Documenti</h2>
+<header>
+  <h4 class="text-center p-4 d-flex justify-content-lg-start"><b>LISTA DOCUMENTI</b></h4>
+</header>
+<div class="page">
+  <div class="page__demo">
+    <div class="main-container page__container">
+      <table class="table">
+        <thead class="table__thead">
+          <tr class="table__head">
+            <th class="table__th"><b>I TUOI DOCUMENTI</b></th>
+            <th class="table__th"></th>
+            <th class="table__th"></th>
+            <th class="table__th"></th>
+            <th class="table__th"></th>
+            <th class="table__th">
+              <div class="col-auto">
+                <form (submit)="filterTable()">
+                  <input type="text" class="form-control" placeholder="Filtra per nome" [formControl]="filterControl">
+                </form>
+              </div>
+            </th>
+            <th class="table__th">
+              <button class="btn btn-primary" (click)="editFile(null)">Crea nuovo file</button>
+            </th>
 
-<div class="row mb-3 d-flex justify-content-end">
-  <div class="col-auto">
-    <button class="btn btn-primary" (click)="editFile(null)">Crea nuovo file</button>
-  </div>
-  <div class="col-auto">
-    <form (submit)="filterTable()">
-      <input type="text" class="form-control" placeholder="Filtra per nome" [formControl]="filterControl">
-    </form>
-  </div>
-</div>
+          </tr>
+        </thead>
+        <tbody class="table__tbody">
+          <tr class="table__tr">
+            <td class="table__td table__mobile-title">
+              <span><b>ID</b></span>
+            </td>
+            <td class="table__td">
+              <span class="table__value"><b>TITOLO</b></span>
+            </td>
+            <td class="table__td">
+              <span class="table__value"><b>NOME FILE</b></span>
+            </td>
+            <td class="table__td">
+              <span class="table__value"><b>TIPOLOGIA</b></span>
+            </td>
+            <td class="table__td">
+              <span class="table__value"><b>OBBBLIGATORIO</b></span>
+            </td>
 
-<table class="table table-bordered table-striped">
-  <thead class="thead-dark">
-    <tr>
-      <th style="background-color: #007bff; color: white;">ID</th>
-      <th style="background-color: #007bff; color: white;">Nome file</th>
-      <th style="background-color: #007bff; color: white;">Tipologia</th>
-      <th style="background-color: #007bff; color: white;">Obbligatorio</th>
-      <th style="background-color: #007bff; color: white;">Azioni</th>
-      <!-- <th style="background-color: #007bff; color: white;">File</th> -->
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let file of filteredFiles">
-      <td style="background-color: #eaf1fb;">{{ file.id }}</td>
-      <td style="background-color: #eaf1fb;">{{ file.name }}</td>
-      <td style="background-color: #eaf1fb;">{{file.tipologia}}</td>
-      <td style="background-color: #eaf1fb;">{{file.obbligatorio}}</td>
-      <!-- <td style="background-color: #eaf1fb;">{{file.fileBase64}}</td> -->
-      <td style="background-color: #eaf1fb;">
-        <button class="btn btn-secondary" (click)="editFile(file.id)">Modifica</button>
-        <button class="btn btn-danger" (click)="deleteFile(file.id)">Elimina</button>
-        <button class="btn btn-primary" (click)="downloadFile(file.Base64.data, file.Base64.title)">Scarica</button>
-      </td>
-    </tr>
-  </tbody>
-</table>
+            <td class="table__td"></td>
+            <td class="table__td">
+              <span class="table__value"><b>AZIONI</b></span>
+            </td>
+          </tr>
+        </tbody>
+        <tbody class="table__tbody">
+          <tr class="table__tr" *ngFor="let file of filteredFiles">
+            <td class="table__td table__mobile-title">
+              <span><b>{{ file.id }}</b></span>
+            </td>
+            <td class="table__td">
+              <span class="table__value"><b>{{ file.name }}</b></span>
+            </td>
+            <td class="table__td">
+              <span class="table__value"><b>{{ file.Base64.title }}</b></span>
+            </td>
+            <td class="table__td">
+              <span class="table__value"><b>{{file.tipologia}}</b></span>
+            </td>
+            <td class="table__td">
+              <span class="table__value"><b>{{file.obbligatorio}}</b></span>
+            </td>
+            <td class="table__td"></td>
+            <td class="table__td d-flex border-0">
+              <span class="icon-container" (click)="editFile(file.id)">
+                <i class="bi bi-pencil-square m-1" style="color: orange; font-size: 2rem;"></i>
+              </span>
+              <span class="icon-container" (click)="downloadFile(file.Base64.data, file.Base64.title)">
+                <i class="bi bi-file-earmark-arrow-down m-1" style="color: orange; font-size: 2rem;"></i>
+              </span>
+              <div class="img-container" (click)="deleteFile(file.id)">
+                <img src="assets/icons/cestino.png" alt="cestino" class="mt-2 ">
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>

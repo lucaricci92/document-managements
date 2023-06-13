@@ -12,48 +12,49 @@ export class CreateEditComponent implements OnInit {
 
   fileId: string | null = null;
 
-  datafile: File = {
-    name: '',
-    tipologia: '',
-    obbligatorio: '',
-    Base64: {
-      data: '',
-      title: '',
-    }
-  } as File;
-  form: FormGroup = new FormGroup({});
+  datafile: File
+
+  form = new FormGroup({
+    name: new FormControl(null, [Validators.required]),
+    tipologia: new FormControl(null, [Validators.required]),
+    obbligatorio: new FormControl(null, [Validators.required]),
+    data: new FormControl(null, [Validators.required]),
+    titleFile: new FormControl(null, [Validators.required]),
+  });
 
   constructor(private route: ActivatedRoute,
     private service: ServiceService,
     private router: Router
   ) {
-    this.form = this.createForm();
+    this.route.paramMap.subscribe(params => {
+      this.fileId = params.get('id');
+    });
   }
 
   ngOnInit() {
-    this.route.paramMap.subscribe(params => {
-      this.fileId = params.get('id');
-      if (this.fileId) {
-        // Modifica del file con ID fileId
-        console.log('Modifica del file con ID:', this.fileId);
-        this.service.getFile(this.fileId).subscribe({
-          next: (response) => {
-            this.datafile = response;
-            this.form = this.createForm();
-          },
-          error: (error) => {
-            console.log(error);
-          }
+    if (this.fileId) {
+      this.service.getFile(this.fileId).subscribe({
+        next: (response) => {
+          this.datafile = response;
+          this.form = this.createForm();
+        },
+        error: (error) => {
+          console.log(error);
         }
-        );
-      } else {
-        // Creazione di un nuovo file
-        console.log('Creazione di un nuovo file');
-        this.form = this.createForm();
-      }
-
-
-    });
+      });
+    } else {
+      console.log('Creazione di un nuovo file');
+      this.datafile = {
+        name: '',
+        tipologia: '',
+        obbligatorio: false,
+        Base64: {
+          data: '',
+          title: '',
+        }
+      };
+      this.form = this.createForm();
+    }
   }
   createForm(): FormGroup {
     return new FormGroup({
@@ -109,12 +110,16 @@ export class CreateEditComponent implements OnInit {
     reader.readAsDataURL(file);
   }
 
+  annulla() {
+    this.router.navigate(['/documents']);
+  }
+
 
 }
 interface File {
   name: string;
   tipologia: string;
-  obbligatorio: string;
+  obbligatorio: boolean;
   Base64: {
     data: string;
     title: string;
