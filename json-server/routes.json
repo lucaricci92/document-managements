@@ -1,4 +1,6 @@
 {
-  "/quotations/:id": "/quotationDetail",
-  "/policies/:id": "/policyDetail"
+  "/documents": {
+    "target": "http://localhost:3000",
+    "secure": false
+  }
 }

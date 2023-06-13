@@ -1,27 +1,62 @@
-# DocumentManagements
+# Progetto Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.3.
+## Istruzioni per l'installazione e l'avvio del progetto
 
-## Development server
+Segui le istruzioni riportate di seguito per installare e avviare correttamente il progetto Angular.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Prerequisiti
 
-## Code scaffolding
+Assicurati di avere i seguenti prerequisiti installati sul tuo sistema:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Node.js: [https://nodejs.org](https://nodejs.org) (14.15.1)
 
-## Build
+### Installazione
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Scarica il codice sorgente del progetto e posizionati nella directory principale del progetto.
 
-## Running unit tests
+2. Apri un terminale nella directory principale del progetto.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+3. Esegui il seguente comando per installare le dipendenze del progetto utilizzando npm:
 
-## Running end-to-end tests
+    ```bash
+    npm install
+    ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+    Questo comando installerà tutte le dipendenze necessarie per il progetto.
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Avvio del server backend
+
+1. Apri un nuovo terminale nella directory principale del progetto.
+
+2. Esegui il seguente comando per avviare il server backend:
+   
+    ```bash
+    npm run server
+    ```
+
+    Il server backend verrà avviato.
+
+
+Assicurati che il server backend si avvii correttamente senza errori.
+
+### Avvio del progetto frontend
+
+1. Apri un nuovo terminale nella directory principale del progetto.
+
+2. Esegui il seguente comando per avviare il progetto frontend:
+   
+    ```bash
+    ng serve
+    ```
+
+Il progetto verrà compilato e avviato. Apri il tuo browser e visita l'URL [http://localhost:4200](http://localhost:4200) per visualizzare il progetto Angular.
+
+Ogni modifica apportata al codice verrà automaticamente rilevata e il progetto verrà ricompilato in tempo reale.
+
+### Note
+
+- Assicurati che il server backend sia in esecuzione prima di avviare il progetto frontend.
+- Verifica che le porte 4200 (per il frontend) e 3000 (per il backend) siano disponibili sul tuo sistema.
+- Per ulteriori informazioni sull'utilizzo di Angular, consulta la documentazione ufficiale di Angular: [https://angular.io/docs](https://angular.io/docs)
+
